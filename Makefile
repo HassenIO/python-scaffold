@@ -14,4 +14,7 @@ install: compile
 test:
 	python3 -m pytest -vv --cov
 
-.PHONY: setup activate compile install test
+run:
+	python3 hello.py
+
+.PHONY: setup activate compile install test run
