@@ -14,6 +14,12 @@ install: compile
 test:
 	python3 -m pytest -vv --cov
 
+check:
+	black --check .
+
+format:
+	black .
+
 run:
 	python3 hello.py
 

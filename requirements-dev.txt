@@ -6,12 +6,22 @@
 #
 attrs==21.4.0
     # via pytest
+black==22.1.0
+    # via -r requirements-dev.in
+click==8.0.3
+    # via black
 coverage[toml]==6.3.1
     # via pytest-cov
 iniconfig==1.1.1
     # via pytest
+mypy-extensions==0.4.3
+    # via black
 packaging==21.3
     # via pytest
+pathspec==0.9.0
+    # via black
+platformdirs==2.5.0
+    # via black
 pluggy==1.0.0
     # via pytest
 py==1.11.0
@@ -26,5 +36,8 @@ pytest-cov==3.0.0
     # via -r requirements-dev.in
 tomli==2.0.1
     # via
+    #   black
     #   coverage
     #   pytest
+typing-extensions==4.1.1
+    # via black
